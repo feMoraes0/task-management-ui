@@ -1,0 +1,102 @@
+.home-container {
+  background-color: rgba(38, 42, 65, 1.0);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: hidden;
+}
+
+div.details {
+  margin: 10px 10px 10px 0px;
+  height: calc(100% - 20px);
+  width: calc(100% - 10px);
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 20px;
+  padding: 45px;
+  overflow-y: auto;
+}
+
+div.details button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  height: 65px;
+  width: 65px;
+  background-color: rgba(137, 79, 198, 1.0);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
+}
+div.details button svg {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1.0);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+header p.header-title {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+header p.header-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+  color: grey;
+}
+header div.group-avatar {
+  border: 1px solid black;
+}
+
+section {
+  margin-top: 60px;
+}
+section div.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(220, 220, 220, 1.0);
+}
+section div.title h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section div.tasks {
+  margin-bottom: 50px;
+}
+section div.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 13px 0px;
+}
+section div.task p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  color: grey;
+  line-height: 1.0;
+}
+section div.task p svg {
+  margin-right: 13px;
+  color: silver;
+}
+
+section div.task div.status {
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+  
+}
+section div.task div.status p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 0, 0, 0.8);
+}
