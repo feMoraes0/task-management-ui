@@ -39,7 +39,11 @@ function Infos() {
         <input type='text' placeholder='Search Task or Project' />
       </form>
       <section className='projects'>
-        <h4>Projects</h4>
+        <h4>
+          Projects
+          {' '}
+          <span>(13)</span>
+        </h4>
         <div className='cards'>
           {
             projects.map((project) => (
