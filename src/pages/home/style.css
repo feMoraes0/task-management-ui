@@ -50,7 +50,30 @@ header p.header-subtitle {
   color: grey;
 }
 header div.group-avatar {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+header div.group-avatar svg {
+  margin-left: 10px;
+  margin-top: 7px;
+}
+header div.group-avatar div.circle-avatar {
+  border: 3px solid #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  margin-left: -15px;
+}
+header div.group-avatar div.circle-avatar img {
+  border-radius: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header div.group-avatar div.circle-avatar:first-child {
+  margin-left: 0;
 }
 
 section {

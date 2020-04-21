@@ -1,12 +1,27 @@
 import React from 'react';
 import './style.css';
 import {
-  FiMoreHorizontal, FiCheckCircle, FiCircle, FiPlus,
+  FiMoreHorizontal, FiCheckCircle, FiCircle, FiPlus, FiPlusCircle,
 } from 'react-icons/fi';
 
 function Home() {
   const tasks = [0, 1, 2, 3, 4, 5];
   const tasks2 = [0, 1, 2];
+
+  const sharedWith = [
+    {
+      id: 1,
+      img: 'https://mediarepository.codemotionworld.com/img/users/1194.jpg',
+    },
+    {
+      id: 2,
+      img: 'https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg',
+    },
+    {
+      id: 3,
+      img: 'https://miro.medium.com/max/1228/1*swEsfQdCfFAyOPWMgqL7wg.jpeg',
+    },
+  ];
 
   return (
     <div className='home-container'>
@@ -18,7 +33,14 @@ function Home() {
             <p className='header-subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ultricies urna, eu venenatis tellus.</p>
           </div>
           <div className='group-avatar'>
-            <p>Avatares</p>
+            {
+              sharedWith.map((person) => (
+                <div key={person.id} className='circle-avatar' style={{ zIndex: 10 / person.id }}>
+                  <img src={person.img} alt='person' />
+                </div>
+              ))
+            }
+            <FiPlusCircle size={30} color='silver' />
           </div>
         </header>
         <section>
