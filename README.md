@@ -9,13 +9,13 @@
 > Coming soon...
 
 ## Objectives and Challanges
-The first of all challanges is build a design without any specifications or helpful assets (as the backgrounds used), only a picture with the final result.
+The first of all challenges is to build a design without any specifications or helpful assets (as the backgrounds used), only a picture with the final result.
 
-Secondly as a personal challenge I decided to implement one new design element and some animations during the user interactions, the new element added was the input to add a new task in the list; The animation to show and hide the input, animations to show elements and this one combined the state when was been updated.
+Secondly as a personal challenge I decided to implement one new design element and some animations during the user interactions, the new element added was the input to add a new task in the list; The animation to show and hide the input, animations to show elements and this one combined the state when it was been updated.
 
-Thirdly, I decide to add a new screen only to add screen transition and test some animations during this process, this was the first time that I tried to change the screen using an animation to remove the "old screen" and show the "new".
+Thirdly, I decided to add a new screen only to add screen transition and test some animations during this process, this was the first time that I tried to change the screen using an animation to remove the "old screen" and show the "new".
 
-To conclude, it was a simple project with basic and medium front end features made to learn more the limits and possibilities of react.js interacting with css and to improve my knowledges about front end development applying it.
+To conclude, it was a simple project with basic and medium front end features made to learn more the limits and possibilities of react.js interacting with css and to improve my knowledge about front end development applying it.
 
 ## Packages
  - `react-icons` to provide all icons used.
