@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='home-container'>
       <Infos projects={projects} />
-      <Details />
+      <Details tasks={projects[0].tasks} />
     </div>
   );
 }

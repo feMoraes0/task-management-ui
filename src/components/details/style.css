@@ -88,13 +88,13 @@ section div.task {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 13px 0px;
+  margin: 15px 0px;
 }
 section div.task p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   color: grey;
   line-height: 1.0;
 }
@@ -105,12 +105,14 @@ section div.task p svg {
 
 section div.task div.status {
   background-color: rgba(255, 0, 0, 0.1);
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 100px;
-  
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
 section div.task div.status p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  color: rgba(255, 0, 0, 0.8);
+  text-transform: capitalize;
 }

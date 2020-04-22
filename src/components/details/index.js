@@ -3,10 +3,27 @@ import './style.css';
 import {
   FiMoreHorizontal, FiCheckCircle, FiCircle, FiPlus, FiPlusCircle,
 } from 'react-icons/fi';
+import PropTypes from 'prop-types';
 
-function Details() {
-  const tasks = [0, 1, 2, 3, 4, 5];
-  const tasks2 = [0, 1, 2];
+function Details({ tasks }) {
+  const statusColors = {
+    approved: {
+      bgColor: '#E0F5F4',
+      color: '#58BDBC',
+    },
+    'in progress': {
+      bgColor: '#E3EFFD',
+      color: '#72ABF3',
+    },
+    'in review': {
+      bgColor: '#FCEEE8',
+      color: '#F19C80',
+    },
+    waiting: {
+      bgColor: '#ECEEF0',
+      color: '#838F9E',
+    },
+  };
 
   const sharedWith = [
     {
@@ -48,15 +65,15 @@ function Details() {
         </div>
         <div className='tasks'>
           {
-              tasks.map((task) => (
-                <div className='task'>
+              tasks.today.map((today) => (
+                <div key={today.id} className='task'>
                   <p>
-                    <FiCheckCircle size={20} />
+                    { (today.checked) ? <FiCheckCircle size={20} color='#67DAD9' /> : <FiCircle size={20} /> }
                     {' '}
-                    Duis mollis ultricies urna, eu venenatis tellus.
+                    {today.text}
                   </p>
-                  <div className='status'>
-                    <p>Approved</p>
+                  <div className='status' style={{ backgroundColor: statusColors[today.status].bgColor }}>
+                    <p style={{ color: statusColors[today.status].color }}>{today.status}</p>
                   </div>
                 </div>
               ))
@@ -70,15 +87,15 @@ function Details() {
         </div>
         <div className='tasks'>
           {
-              tasks2.map((task2) => (
-                <div className='task'>
+              tasks.upcoming.map((upcoming) => (
+                <div key={upcoming.id} className='task'>
                   <p>
-                    <FiCircle size={20} />
+                    { (upcoming.checked) ? <FiCheckCircle size={20} color='#67DAD9' /> : <FiCircle size={20} /> }
                     {' '}
-                    Duis mollis ultricies urna, eu venenatis tellus.
+                    {upcoming.text}
                   </p>
-                  <div className='status'>
-                    <p>Approved</p>
+                  <div className='status' style={{ backgroundColor: statusColors[upcoming.status].bgColor }}>
+                    <p style={{ color: statusColors[upcoming.status].color }}>{upcoming.status}</p>
                   </div>
                 </div>
               ))
@@ -91,5 +108,9 @@ function Details() {
     </div>
   );
 }
+
+Details.propTypes = {
+  tasks: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default Details;

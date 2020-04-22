@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { FiSearch } from 'react-icons/fi';
+import PropTypes from 'prop-types';
 
 function Infos({ projects }) {
   return (
@@ -42,5 +43,9 @@ function Infos({ projects }) {
     </div>
   );
 }
+
+Infos.propTypes = {
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default Infos;
