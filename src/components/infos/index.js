@@ -2,34 +2,7 @@ import React from 'react';
 import './style.css';
 import { FiSearch } from 'react-icons/fi';
 
-function Infos() {
-  const projects = [
-    {
-      id: 1,
-      name: 'Green House',
-      abbr: 'GH',
-    },
-    {
-      id: 2,
-      name: 'Cyber Punk',
-      abbr: 'CP',
-    },
-    {
-      id: 3,
-      name: 'Easy Crypto',
-      abbr: 'EC',
-    },
-    {
-      id: 4,
-      name: 'Travel App',
-      abbr: 'TA',
-    },
-    {
-      id: 5,
-      name: 'Landing Page',
-      abbr: 'LP',
-    },
-  ];
+function Infos({ projects }) {
   return (
     <div className='infos-container'>
       <h2>Hi Samantha</h2>
@@ -48,8 +21,8 @@ function Infos() {
           {
             projects.map((project) => (
               <div key={project.id} className='card-project'>
-                <div className='card'>
-                  <div>
+                <div className='card' style={{ borderColor: project.colorOne }}>
+                  <div style={{ background: `linear-gradient(to top right, ${project.colorOne}, ${project.colorTwo})` }}>
                     {project.abbr}
                   </div>
                 </div>

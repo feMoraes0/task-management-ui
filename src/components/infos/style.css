@@ -67,7 +67,7 @@ section.projects div.card-project {
 }
 
 section.projects div.card-project div.card {
-  border: 2px solid transparent;
+  border: 2px solid none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,13 +78,12 @@ section.projects div.card-project div.card {
   color: rgba(255, 255, 255, 1.0);
 }
 section.projects div.card-project div.card:hover {
-  border: 2px solid rgba(255, 255, 255, 1.0);
+  border: 2px solid;
 }
 
 section.projects div.card-project div.card div {
   height: 85px;
   width: 85px;
-  background-color: rosybrown;
   border-radius: 15px;
   display: flex;
   align-items: center;

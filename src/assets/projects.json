@@ -1,0 +1,337 @@
+[
+  {
+    "id": 1,
+    "name": "Green House",
+    "abbr": "GH",
+    "colorOne": "#E752C2",
+    "colorTwo": "#E94787",
+    "tasks": {
+      "today": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "approved",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Create initial layout for homepage",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Discussions regarding workflow improvement",
+          "status": "approved",
+          "checked": false
+        },
+        {
+          "id": 6,
+          "text": "Create quotation for add redesign project",
+          "status": "waiting",
+          "checked": false
+        }
+      ],
+      "upcoming": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 2,
+          "text": "Discussions regarding workflow improvement",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "waiting",
+          "checked": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Cyber Punk",
+    "abbr": "CP",
+    "colorOne": "#387DDC",
+    "colorTwo": "#68D2A7",
+    "tasks": {
+      "today": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "approved",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Create initial layout for homepage",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Discussions regarding workflow improvement",
+          "status": "approved",
+          "checked": false
+        },
+        {
+          "id": 6,
+          "text": "Create quotation for add redesign project",
+          "status": "waiting",
+          "checked": false
+        }
+      ],
+      "upcoming": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 2,
+          "text": "Discussions regarding workflow improvement",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "waiting",
+          "checked": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Easy Crypto",
+    "abbr": "EC",
+    "colorOne": "#6E41BE",
+    "colorTwo": "#B464D2",
+    "tasks": {
+      "today": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "approved",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Create initial layout for homepage",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Discussions regarding workflow improvement",
+          "status": "approved",
+          "checked": false
+        },
+        {
+          "id": 6,
+          "text": "Create quotation for add redesign project",
+          "status": "waiting",
+          "checked": false
+        }
+      ],
+      "upcoming": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 2,
+          "text": "Discussions regarding workflow improvement",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "waiting",
+          "checked": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Travel App",
+    "abbr": "TA",
+    "colorOne": "#46AFEF",
+    "colorTwo": "#6F4BF1",
+    "tasks": {
+      "today": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "approved",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Create initial layout for homepage",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Discussions regarding workflow improvement",
+          "status": "approved",
+          "checked": false
+        },
+        {
+          "id": 6,
+          "text": "Create quotation for add redesign project",
+          "status": "waiting",
+          "checked": false
+        }
+      ],
+      "upcoming": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 2,
+          "text": "Discussions regarding workflow improvement",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "waiting",
+          "checked": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Landing Page",
+    "abbr": "LP",
+    "colorOne": "#ED7664",
+    "colorTwo": "#F5B971",
+    "tasks": {
+      "today": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "approved",
+          "checked": true
+        },
+        {
+          "id": 2,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 4,
+          "text": "Create initial layout for homepage",
+          "status": "in progress",
+          "checked": true
+        },
+        {
+          "id": 5,
+          "text": "Discussions regarding workflow improvement",
+          "status": "approved",
+          "checked": false
+        },
+        {
+          "id": 6,
+          "text": "Create quotation for add redesign project",
+          "status": "waiting",
+          "checked": false
+        }
+      ],
+      "upcoming": [
+        {
+          "id": 1,
+          "text": "Create initial layout for homepage",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 2,
+          "text": "Discussions regarding workflow improvement",
+          "status": "waiting",
+          "checked": false
+        },
+        {
+          "id": 3,
+          "text": "Fixing icons with transparent background",
+          "status": "waiting",
+          "checked": false
+        }
+      ]
+    }
+  }
+]
