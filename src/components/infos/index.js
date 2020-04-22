@@ -1,12 +1,20 @@
 import React from 'react';
 import './style.css';
-import { FiSearch } from 'react-icons/fi';
+import { FiSearch, FiLogOut } from 'react-icons/fi';
 import PropTypes from 'prop-types';
+import { useHistory } from 'react-router-dom';
 
 function Infos({ projects, selected, setSelected }) {
+  const history = useHistory();
   return (
     <div className='infos-container'>
-      <h2>Hi Samantha</h2>
+      <h2>
+        Hi Samantha
+        {' '}
+        <button type='button' onClick={() => history.push('/')}>
+          <FiLogOut />
+        </button>
+      </h2>
       <h4>Welcome back to the workspace, we missed You!</h4>
       <form action=''>
         <FiSearch />

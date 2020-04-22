@@ -7,6 +7,25 @@ div.infos-container h2 {
   font-size: 35px;
   font-weight: 400;
   animation: show 1000ms ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.infos-container h2 button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+div.infos-container h2 button:focus {
+  outline: transparent;
+}
+
+div.infos-container h2 button svg {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 div.infos-container h4 {

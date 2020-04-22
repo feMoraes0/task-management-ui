@@ -1,0 +1,47 @@
+div.login-container {
+  background-color: rgba(38, 42, 65, 1.0);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.login-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.login-container div img {
+  width: 45%;
+  height: 45%;
+  margin-bottom: 20px;
+}
+div.login-container div input {
+  width: 90%;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+div.login-container div input:focus, div.login-container div button:focus {
+  outline: transparent;
+}
+div.login-container div button {
+  margin-top: 10px;
+  width: 90%;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(137, 79, 198, 1.0);
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+div.login-container div button:hover {
+  background-color: rgba(137, 79, 198, 0.5);
+}
