@@ -2,16 +2,16 @@ import React from 'react';
 import './style.css';
 import { FiSearch, FiLogOut } from 'react-icons/fi';
 import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
 
-function Infos({ projects, selected, setSelected }) {
-  const history = useHistory();
+function Infos({
+  projects, selected, setSelected, logout,
+}) {
   return (
     <div className='infos-container'>
       <h2>
         Hi Samantha
         {' '}
-        <button type='button' onClick={() => history.push('/')}>
+        <button type='button' onClick={logout}>
           <FiLogOut />
         </button>
       </h2>
@@ -58,6 +58,7 @@ Infos.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.object).isRequired,
   selected: PropTypes.number.isRequired,
   setSelected: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired,
 };
 
 export default Infos;

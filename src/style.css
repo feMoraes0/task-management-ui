@@ -12,3 +12,42 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.remove-page {
+  animation: disappear 1000ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1.0);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.init-page {
+  animation: appear 1000ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  100% {
+    transform: scale(1);
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  0% {
+    transition: scale(0);
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
