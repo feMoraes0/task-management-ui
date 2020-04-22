@@ -6,6 +6,7 @@ div.infos-container h2 {
   color: rgba(255, 255, 255, 1.0);
   font-size: 35px;
   font-weight: 400;
+  animation: show 1000ms ease-in-out;
 }
 
 div.infos-container h4 {
@@ -13,6 +14,7 @@ div.infos-container h4 {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.8;
+  animation: show 1000ms ease-in-out;
 }
 div.infos-container h4 span {
   font-size: 15px;
@@ -30,6 +32,7 @@ div.infos-container form {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   padding-left: 15px;
+  animation: show 1000ms ease-in-out;
 }
 div.infos-container form svg {
   font-size: 17px;
@@ -59,6 +62,13 @@ section.projects div.cards {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px 20px;
 }
+section.projects div.cards button {
+  background-color: transparent;
+  border-color: transparent;
+}
+section.projects div.cards button:focus {
+  outline: none;
+}
 
 section.projects div.card-project {
   display: flex;
@@ -67,7 +77,7 @@ section.projects div.card-project {
 }
 
 section.projects div.card-project div.card {
-  border: 2px solid none;
+  border: 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +86,7 @@ section.projects div.card-project div.card {
   width: 100px;
   margin-bottom: 15px;
   color: rgba(255, 255, 255, 1.0);
+  animation: show 1000ms ease-in-out;
 }
 section.projects div.card-project div.card:hover {
   border: 2px solid;
@@ -103,4 +114,13 @@ div.extra-card div.card{
 }
 div.extra-card div.card div {
   background-color: rgba(255, 255, 255, .1) !important;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
 }

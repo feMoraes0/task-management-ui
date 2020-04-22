@@ -3,7 +3,7 @@ import './style.css';
 import { FiSearch } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 
-function Infos({ projects }) {
+function Infos({ projects, selected, setSelected }) {
   return (
     <div className='infos-container'>
       <h2>Hi Samantha</h2>
@@ -22,11 +22,13 @@ function Infos({ projects }) {
           {
             projects.map((project) => (
               <div key={project.id} className='card-project'>
-                <div className='card' style={{ borderColor: project.colorOne }}>
-                  <div style={{ background: `linear-gradient(to top right, ${project.colorOne}, ${project.colorTwo})` }}>
-                    {project.abbr}
+                <button type='button' onClick={() => setSelected(project.id)}>
+                  <div className='card' style={{ borderColor: (selected === project.id) ? project.colorOne : 'transparent' }}>
+                    <div style={{ background: `linear-gradient(to top right, ${project.colorOne}, ${project.colorTwo})` }}>
+                      {project.abbr}
+                    </div>
                   </div>
-                </div>
+                </button>
                 <p className='project-name'>{project.name}</p>
               </div>
             ))
@@ -46,6 +48,8 @@ function Infos({ projects }) {
 
 Infos.propTypes = {
   projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+  selected: PropTypes.number.isRequired,
+  setSelected: PropTypes.func.isRequired,
 };
 
 export default Infos;

@@ -6,6 +6,7 @@ div.details {
   border-radius: 20px;
   padding: 45px;
   overflow-y: auto;
+  animation: show 50ms ease-in-out;
 }
 
 div.details button {
@@ -20,6 +21,7 @@ div.details button {
   border-radius: 20px;
   border: none;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
+  animation: show 2000ms ease-in-out;
 }
 div.details button svg {
   font-size: 30px;
@@ -29,6 +31,7 @@ div.details button svg {
 header {
   display: grid;
   grid-template-columns: 4fr 2fr;
+  animation: show 1500ms ease-in-out;
 }
 header p.header-title {
   font-size: 30px;
@@ -69,6 +72,7 @@ header div.group-avatar div.circle-avatar:first-child {
 
 section {
   margin-top: 60px;
+  animation: show 1500ms ease-in-out;
 }
 section div.title {
   display: flex;
@@ -116,3 +120,14 @@ section div.task div.status p {
   font-weight: 400;
   text-transform: capitalize;
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

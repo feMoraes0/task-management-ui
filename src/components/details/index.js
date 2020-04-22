@@ -5,7 +5,7 @@ import {
 } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 
-function Details({ tasks }) {
+function Details({ project }) {
   const statusColors = {
     approved: {
       bgColor: '#E0F5F4',
@@ -44,7 +44,7 @@ function Details({ tasks }) {
     <div className='details'>
       <header>
         <div className='text'>
-          <p className='header-title'>cyber punk</p>
+          <p className='header-title'>{project.name}</p>
           <p className='header-subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis ultricies urna, eu venenatis tellus.</p>
         </div>
         <div className='group-avatar'>
@@ -65,7 +65,7 @@ function Details({ tasks }) {
         </div>
         <div className='tasks'>
           {
-              tasks.today.map((today) => (
+              project.tasks.today.map((today) => (
                 <div key={today.id} className='task'>
                   <p>
                     { (today.checked) ? <FiCheckCircle size={20} color='#67DAD9' /> : <FiCircle size={20} /> }
@@ -87,7 +87,7 @@ function Details({ tasks }) {
         </div>
         <div className='tasks'>
           {
-              tasks.upcoming.map((upcoming) => (
+              project.tasks.upcoming.map((upcoming) => (
                 <div key={upcoming.id} className='task'>
                   <p>
                     { (upcoming.checked) ? <FiCheckCircle size={20} color='#67DAD9' /> : <FiCircle size={20} /> }
@@ -110,7 +110,7 @@ function Details({ tasks }) {
 }
 
 Details.propTypes = {
-  tasks: PropTypes.arrayOf(PropTypes.object).isRequired,
+  project: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default Details;

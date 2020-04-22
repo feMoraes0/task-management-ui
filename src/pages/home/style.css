@@ -6,3 +6,12 @@
   grid-template-columns: 1fr 1fr;
   overflow-y: hidden;
 }
+
+.transitionShow {
+  transition: 500ms;
+  opacity: 1;
+}
+.transitionHide {
+  transition: 500ms;
+  opacity: 0.5;
+}
