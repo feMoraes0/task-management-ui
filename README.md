@@ -1,11 +1,13 @@
 <h1 align="center">Task Management</h1>
 
 ## Prints
+
 <p align="center">
   <img width="800" src="prints/task-manager.gif"/>
 </p>
 
 ## Objectives and Challenges
+
 The first of all challenges is to build a design without any specifications or helpful assets (as the backgrounds used), only a picture with the final result.
 
 Secondly as a personal challenge I decided to implement one new design element and some animations during the user interactions, the new element added was the input to add a new task in the list; The animation to show and hide the input, animations to show elements and this one combined the state when it was been updated.
@@ -15,8 +17,10 @@ Thirdly, I decided to add a new screen only to add screen transition and test so
 To conclude, it was a simple project with basic and medium front end features made to learn more the limits and possibilities of react.js interacting with css and to improve my knowledge about front end development applying it.
 
 ## Packages
+
  - `react-icons` to provide all icons used.
  - `eslint`, only for development, to define the code patterns as quotes, white spaces, etc.
+ - `react-router-dom` responsible to control the routes.
 
 
 ## How to use
@@ -38,8 +42,10 @@ $ npm start
 ```
 
 ## Credits
+
  - [#Exploration - Dashboard for Task Management by Dwinawan](https://dribbble.com/shots/6816310--Exploration-Dashboard-for-Task-Management/attachments)
 
 ## Contact
+
   - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
   - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
