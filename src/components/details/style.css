@@ -6,32 +6,69 @@ div.details {
   border-radius: 20px;
   padding: 45px;
   overflow-y: auto;
-  animation: show 50ms ease-in-out;
+  animation: show 1000ms ease-in-out;
+  position: relative;
 }
 
-div.details button {
+div.details button.button-input {
   position: absolute;
   right: 0;
   bottom: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   height: 65px;
   width: 65px;
   background-color: rgba(137, 79, 198, 1.0);
   border-radius: 20px;
   border: none;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, .3);
-  animation: show 2000ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
-div.details button svg {
+div.details button:focus {
+  outline: transparent;
+}
+div.details button.expanded {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+div.details button.button-input svg.svg-plus {
   font-size: 30px;
+  color: rgba(255, 255, 255, 1.0);
+}
+div.details button.button-input form.form-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+div.details button.button-input form.form-button input {
+  height: 100%;
+  width: 90%;
+  font-size: 18px;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border: 3px solid rgba(137, 79, 198, 1.0);
+}
+div.details button.button-input form.form-button button {
+  width: 10%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(137, 79, 198, 1.0);
+  border: none;
+}
+div.details button.button-input form.form-button button svg {
+  font-size: 25px;
   color: rgba(255, 255, 255, 1.0);
 }
 
 header {
   display: grid;
   grid-template-columns: 4fr 2fr;
-  animation: show 1500ms ease-in-out;
 }
 header p.header-title {
   font-size: 30px;
@@ -72,7 +109,6 @@ header div.group-avatar div.circle-avatar:first-child {
 
 section {
   margin-top: 60px;
-  animation: show 1500ms ease-in-out;
 }
 section div.title {
   display: flex;
@@ -130,4 +166,6 @@ section div.task div.status p {
   }
 }
 
-
+.hide {
+  display: none !important;
+}

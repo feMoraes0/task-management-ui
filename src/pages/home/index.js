@@ -15,7 +15,7 @@ function Home() {
     setShow(false);
     setTimeout(() => {
       setShow(true);
-    }, 10);
+    }, 1);
   }, [selected]);
 
   function logout() {

@@ -9,7 +9,7 @@ function Infos({
   return (
     <div className='infos-container'>
       <h2>
-        Hi Samantha
+        Hi Fernando
         {' '}
         <button type='button' onClick={logout}>
           <FiLogOut />

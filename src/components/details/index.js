@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import {
-  FiMoreHorizontal, FiCheckCircle, FiCircle, FiPlus, FiPlusCircle,
+  FiMoreHorizontal, FiCheckCircle, FiCircle, FiPlus, FiPlusCircle, FiSave,
 } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 
 function Details({ project }) {
+  const [expanded, setExpanded] = useState(false);
   const statusColors = {
     approved: {
       bgColor: '#E0F5F4',
@@ -39,6 +40,11 @@ function Details({ project }) {
       img: 'https://miro.medium.com/max/1228/1*swEsfQdCfFAyOPWMgqL7wg.jpeg',
     },
   ];
+
+  function updateExpanded(event) {
+    event.preventDefault();
+    setExpanded(!expanded);
+  }
 
   return (
     <div className='details'>
@@ -102,8 +108,14 @@ function Details({ project }) {
             }
         </div>
       </section>
-      <button type='button'>
-        <FiPlus />
+      <button onClick={updateExpanded} className={(expanded) ? 'button-input expanded' : 'button-input'} type='button'>
+        <FiPlus className={(expanded) ? 'svg-plus hide' : 'svg-plus'} />
+        <form id='form-button' className={(expanded) ? 'form-button' : 'form-button hide'}>
+          <input type='text' placeholder='Add a new task here...' />
+          <button className='button-form' type='submit'>
+            <FiSave />
+          </button>
+        </form>
       </button>
     </div>
   );
