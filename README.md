@@ -5,7 +5,7 @@
   <img width="800" src="prints/task-manager.gif"/>
 </p>
 
-## Objectives and Challanges
+## Objectives and Challenges
 The first of all challenges is to build a design without any specifications or helpful assets (as the backgrounds used), only a picture with the final result.
 
 Secondly as a personal challenge I decided to implement one new design element and some animations during the user interactions, the new element added was the input to add a new task in the list; The animation to show and hide the input, animations to show elements and this one combined the state when it was been updated.
