@@ -1,12 +1,9 @@
 <h1 align="center">Task Management</h1>
 
 ## Prints
-<!--
 <p align="center">
-  <img width="200" src="print.project.screen"/>
+  <img width="800" src="prints/task-manager.gif"/>
 </p>
--->
-> Coming soon...
 
 ## Objectives and Challanges
 The first of all challenges is to build a design without any specifications or helpful assets (as the backgrounds used), only a picture with the final result.
